@@ -13,7 +13,7 @@ This work has been partially funded by the project Lynx, which has received fund
 
 Court decisions from 2017 and 2018 were selected for the dataset, published online by the [Federal Ministry of Justice and Consumer Protection](http://www.rechtsprechung-im-internet.de). The documents originate from seven federal courts: Federal Labour Court (BAG), Federal Fiscal Court (BFH), Federal Court of Justice (BGH), Federal Patent Court (BPatG), Federal Social Court (BSG), Federal Constitutional Court (BVerfG) and Federal Administrative Court (BVerwG). 
 
-## [Annotation Guidelines](https://github.com/elenanereiss/Legal-Entity-Recognition/blob/master/docs/Annotationsrichtlinien.pdf) (German)
+## [Annotation Guidelines](https://github.com/Unity-Legal-Affairs/Legal-Entity-Recognition/blob/main/docs/Annotationsrichtlinien.pdf) (German)
 
 ## Size
 
@@ -89,7 +89,7 @@ python crf.py modelName trainPath testPath
 
 ## Training
 
-- install [BiLSTM-CNN-CRF](https://github.com/UKPLab/emnlp2017-bilstm-cnn-crf);
+- install [BiLSTM-CNN-CRF](https://github.com/Unity-Legal-Affairs/emnlp2017-bilstm-cnn-crf);
 - copy `blstm.py` to folder `emnlp2017-bilstm-cnn-crf/` choose a model (`modelName=crf|blstm-crf|cnn-crf`) and run:
 ```
 python blstm.py modelName trainPath devPath testPath
@@ -98,9 +98,8 @@ python blstm.py modelName trainPath devPath testPath
 
 # Requirements
 
-- [emnlp2017-bilstm-cnn-crf](https://github.com/UKPLab/emnlp2017-bilstm-cnn-crf)
+- [emnlp2017-bilstm-cnn-crf](https://github.com/Unity-Legal-Affairs/emnlp2017-bilstm-cnn-crf)
 - [sklearn-crfsuite](https://sklearn-crfsuite.readthedocs.io/en/latest/)
-- [SoMaJo](https://github.com/tsproisl/SoMaJo)
 
 
 old version
@@ -130,7 +129,7 @@ werkzeug==0.15.4
 
 #### References:
 
-Leitner, E. (2019). [*Eigennamen- und Zitaterkennung in Rechtstexten*](https://github.com/elenanereiss/Legal-Entity-Recognition/blob/master/docs/Leitner_LER_BA.pdf). Bachelor’s thesis, Universität Potsdam, Potsdam, 2.
+Leitner, E. (2019). [*Eigennamen- und Zitaterkennung in Rechtstexten*](https://github.com/Unity-Legal-Affairs/Legal-Entity-Recognition/blob/main/docs/Leitner_LER_BA.pdf). Bachelor’s thesis, Universität Potsdam, Potsdam, 2.
 
 ```
 @mastersthesis{mastersthesis,
@@ -166,4 +165,3 @@ Leitner, E., Rehm, G., and Moreno-Schneider, J. (2019). [Fine-grained Named Enti
   pdf = {https://link.springer.com/content/pdf/10.1007%2F978-3-030-33220-4_20.pdf}}
 ```
 
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
